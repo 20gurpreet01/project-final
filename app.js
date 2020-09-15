@@ -69,12 +69,12 @@ app.use(paymentroutes);
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 3000;
+  port = 3001;
 }
 
 
 
 //////////////////////////////
 app.listen(port,function(){
-    console.log("server has been started");
+    console.log("server has been started"+ port);
 })
